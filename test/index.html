@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <title> IRCTI It's a test/demo of the script </title>
+
+        <link rel="icon" href="http://assets.dhoweb.be/img/favicon/dhoweb.png" type="image/png"/>
+
+        <link rel="stylesheet" href="http://assets.dhoweb.be/plugins/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="http://assets.dhoweb.be/plugins/bootstrap/3.3.7/css/bootstrap-theme.min.css" type="text/css"/>
+    </head>
+
+    <body>
+        <h1> Input Radio Or Check To Image </h1>
+
+        <p> Here is a demo of the jquery plugin available on <a href="" target="_blank">github</a> </p>
+
+        <h4> Input with checkbox </h4>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="check_01">
+                    <input type="checkbox" name="check_1" id="check_01" style="display: none;"/> Input check 1
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="check_02">
+                    <input type="checkbox" name="check_1" id="check_02" checked="checked" style="display: none;"/> Input check 2
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="check_03">
+                    <input type="checkbox" name="check_1" id="check_03" style="display: none;"/> Input check 3
+                </label>
+            </div>
+        </div>
+
+        <blockquote>
+            <pre>
+                <code>
+$(function()
+{
+    $('[name="check_1"]').ircti();
+});</code>
+            </pre>
+        </blockquote>
+
+        <h4> Input with radio </h4>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="radio_01">
+                    <input type="radio" name="radio_1" id="radio_01" checked="checked" style="display: none;"/> Input radio 1
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="radio_02">
+                    <input type="radio" name="radio_1" id="radio_02" style="display: none;"/> Input radio 2
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="radio_03">
+                    <input type="radio" name="radio_1" id="radio_03" style="display: none;"/> Input radio 3
+                </label>
+            </div>
+        </div>
+
+        <blockquote>
+            <pre>
+                <code>
+$(function()
+{
+    $('[name="radio_1"]').ircti();
+});</code>
+            </pre>
+        </blockquote>
+
+        <h4> Input change options </h4>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="radio_11">
+                    <input type="checkbox" name="radio_2" id="radio_11"style="display: none;"/> Input radio 11
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="radio_12">
+                    <input type="checkbox" name="radio_2" id="radio_12" style="display: none;"/> Input radio 12
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="radio_13">
+                    <input type="checkbox" name="radio_2" id="radio_13" checked="checked" style="display: none;"/> Input radio 13
+                </label>
+            </div>
+        </div>
+
+        <blockquote>
+            <pre>
+                <code>
+$('[name="radio_2"]').ircti({
+    height: "20px",
+    width: "20px",
+    url_img_check: "../img/checkbox_check_2.png",
+    url_img_no_check: "../img/checkbox_no_check_2.png"
+});</code>
+            </pre>
+        </blockquote>
+
+        <script type="text/javascript" src="http://assets.dhoweb.be/plugins/jquery/3.1.0/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="../js/ircti.js"></script>
+
+        <script type="text/javascript" src="test.js"></script>
+    </body>
+</html>

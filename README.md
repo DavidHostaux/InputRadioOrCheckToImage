@@ -1,4 +1,5 @@
-# InputSelectOrCheckToImage
-Change the input form select or checked to an image
+# InputRadioOrCheckToImage
+Change the input form radio or checked to an image
 
 Ceci est un autre test
+efze
