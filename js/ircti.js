@@ -1,9 +1,15 @@
 $(function()
 {
     /*
-    * REQUIRES  :
-    * MODIFIES  :
-    * EFFECTS   :
+    * REQUIRES  :   OPTIONAL options that is an array with
+                        - with : the width of the image (exemple: 20px). Default value is 'auto'
+                        - height :  the height of the image (exemple 20px). Default value is 'auto'
+                        - url_img_check : is the image URL for the checked input. Default value is the image in the folder /img
+                        - url_img_no_check : is the image URL for the not checked input. Default value is the image in the folder /img
+                    $(jquery-object).ircti() : $(jquery-object) must be an input checkbox or an input radio
+    * MODIFIES  :   hide the input and show an image
+                    Change the image when the checked value of the input change
+    * EFFECTS   :   return this;
     */
     $.fn.ircti = function(options)
     {
