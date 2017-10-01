@@ -14,20 +14,20 @@ $(function()
     $.fn.ircti = function(options)
     {
         // Check if is input radio or input checkbox
-        if((this.attr('type') == "radio" || this.attr('type') == "checkbox")
+        if((this.attr('type') == 'radio' || this.attr('type') == 'checkbox')
         && $('input[name="'+this.attr('name')+'"]').length > 0)
         {
-            var url_img_check =  "../img/checkbox_check_1.png";
-            var url_img_no_check = "../img/checkbox_no_check_1.png";
-            if(this.attr('type') == "radio")
+            var url_img_check =  '../img/checkbox_check_1.png';
+            var url_img_no_check = '../img/checkbox_no_check_1.png';
+            if(this.attr('type') == 'radio')
             {
-                url_img_check =  "../img/radiobox_check_1.png";
-                url_img_no_check = "../img/radiobox_no_check_1.png";
+                url_img_check =  '../img/radiobox_check_1.png';
+                url_img_no_check = '../img/radiobox_no_check_1.png';
             }
 
             var settings = $.extend({
-                height: "auto",
-                width: "auto",
+                height: 'auto',
+                width: 'auto',
                 url_img_check: url_img_check,
                 url_img_no_check: url_img_no_check
             }, options);
@@ -52,7 +52,7 @@ $(function()
             {
                 var $this = $(this);
 
-                if($this.attr('type') == "radio"){
+                if($this.attr('type') == 'radio'){
                     $('span[data-ircti_lk_name="'+$this.attr('name')+'"]').html('<img src="'+settings.url_img_no_check+'" alt="Input no checked" style="height: '+settings.height+'; width: '+settings.width+'; cursor: pointer;"/>');
 
                     $('span[data-ircti_lk_id="'+$('input[name="'+$this.attr('name')+'"]:checked').attr('id')+'"]').html('<img src="'+settings.url_img_check+'" alt="Input checked" style="height: '+settings.height+'; width: '+settings.width+'; cursor: pointer;"/>');
@@ -69,7 +69,7 @@ $(function()
         }
         else
         {
-            console.warn("There is no input 'radio' or 'checkbox' in the jquery object passed");
+            console.warn('There is no input "radio" or "checkbox" in the jquery object passed');
         }
 
         return this;
